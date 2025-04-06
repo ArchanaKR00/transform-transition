@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Transform & Transition</title>
+  </head>
+  <body class="p-10">
+    <!-- No Transition -->
+
+    <!-- Transition -->
+    <!-- 1. https://tailwindcss.com/docs/transition-property -->
+     <div>
+    <button class="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+      Save Changes
+    </button>
+  </div> <br><br>
+    <!-- 2. https://tailwindcss.com/docs/transition-duration -->
+     <div class="container bg-stone-400 text-white p-8 flex space-x-5">
+    <button class="transition duration-150 ease-in-out bg-blue-800">Button A</button>
+    <button class="transition duration-300 ease-in-out bg-blue-800">Button B</button>
+    <button class="transition duration-700 ease-in-out bg-blue-800">Button C</button></div><br><br>
+    <!-- 3. https://tailwindcss.com/docs/transition-timing-function -->
+    <div class="container bg-stone-400 text-white p-8 flex space-x-5">
+    <button class="duration-300 ease-in bg-pink-600">Button A</button>
+    <button class="duration-300 ease-out bg-pink-600 ">Button B</button>
+    <button class="duration-300 ease-in-out bg-pink-600">Button C</button></div><br><br>
+    <!-- 4. https://tailwindcss.com/docs/transition-delay -->
+    <div class="container bg-stone-400 text-white p-8 flex space-x-5"> 
+    <button class="transition delay-150 duration-300 ease-in-out bg-indigo-500">Button A</button>
+    <button class="transition delay-300 duration-300 ease-in-out bg-indigo-500">Button B</button>
+    <button class="transition delay-700 duration-300 ease-in-out bg-indigo-500">Button C</button></div><br><br>
+    <!-- 5. https://tailwindcss.com/docs/animation -->
+    <button type="button" class=" rounded bg-indigo-500" disabled>
+      <svg class="mr-3 size-4 animate-spin ..." viewBox="0 0 24 24">
+      </svg>
+      Processing…
+    </button>
+
+    <!-- Transition & Transform -->
+
+    <!-- Animation -->
+  </body>
+</html>
